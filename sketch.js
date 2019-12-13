@@ -1,60 +1,63 @@
 var canvas = document.getElementById("canvas1");
-var dim = canvas.getContext("2d");
+var can = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+var w = window.innerWidth;
+var h = window.innerHeight;
+
 function draw() {
-  for (var i = 0; i < 12; i++) {
-    for (var j = 0; j < 9; j++) {
-      if (i >= 3 && i <= 5 && j >= 0 && j <= 2) {
-        dim.beginPath();
-        dim.lineWidth = 1;
-        dim.strokeStyle = colourNameToHex("black");
-        dim.fillStyle = colourNameToHex("white");
-        dim.rect(50 + i * 20, 50 + j * 20, 19, 19);
-        dim.stroke();
-        dim.fill();
-      } else if (i >= 3 && i <= 5 && j >= 6 && j <= 8) {
-        dim.beginPath();
-        dim.lineWidth = 1;
-        dim.strokeStyle = colourNameToHex("black");
-        dim.fillStyle = colourNameToHex("yellow");
-        dim.rect(50 + i * 20, 50 + j * 20, 19, 19);
-        dim.stroke();
-        dim.fill();
-      } else if (i >= 0 && i <= 2 && j >= 3 && j <= 5) {
-        dim.beginPath();
-        dim.lineWidth = 1;
-        dim.strokeStyle = colourNameToHex("black");
-        dim.fillStyle = colourNameToHex("red");
-        dim.rect(50 + i * 20, 50 + j * 20, 19, 19);
-        dim.stroke();
-        dim.fill();
-      } else if (i >= 3 && i <= 5 && j >= 3 && j <= 5) {
-        dim.beginPath();
-        dim.lineWidth = 1;
-        dim.strokeStyle = colourNameToHex("black");
-        dim.fillStyle = colourNameToHex("blue");
-        dim.rect(50 + i * 20, 50 + j * 20, 19, 19);
-        dim.stroke();
-        dim.fill();
-      } else if (i >= 6 && i <= 8 && j >= 3 && j <= 5) {
-        dim.beginPath();
-        dim.lineWidth = 1;
-        dim.strokeStyle = colourNameToHex("black");
-        dim.fillStyle = colourNameToHex("orange");
-        dim.rect(50 + i * 20, 50 + j * 20, 19, 19);
-        dim.stroke();
-        dim.fill();
-      } else if (i >= 9 && i <= 11 && j >= 3 && j <= 5) {
-        dim.beginPath();
-        dim.lineWidth = 1;
-        dim.strokeStyle = colourNameToHex("black");
-        dim.fillStyle = colourNameToHex("green");
-        dim.rect(50 + i * 20, 50 + j * 20, 19, 19);
-        dim.stroke();
-        dim.fill();
+  for (var i = -6; i < 6; i++) {
+    for (var j = -4.5; j < 4.5; j++) {
+      if (i >= -3 && i <= -1 && j >= -4.5 && j <= -2.5) {
+        can.beginPath();
+        can.lineWidth = 2;
+        can.strokeStyle = colourNameToHex("black");
+        can.fillStyle = colourNameToHex("white");
+        can.rect(w/2 + i * 40, h/2.2 + j * 40, 38, 38);
+        can.stroke();
+        can.fill();
+      } else if (i >= -3 && i <= -1 && j >= 1.5 && j <= 3.5) {
+        can.beginPath();
+        can.lineWidth = 2;
+        can.strokeStyle = colourNameToHex("black");
+        can.fillStyle = colourNameToHex("yellow");
+        can.rect(w/2 + i * 40, h/2.2 + j * 40, 38, 38);
+        can.stroke();
+        can.fill();
+      } else if (i >= -6 && i <= -4 && j >= -1.5 && j <= 0.5) {
+        can.beginPath();
+        can.lineWidth = 2;
+        can.strokeStyle = colourNameToHex("black");
+        can.fillStyle = colourNameToHex("red");
+        can.rect(w/2 + i * 40, h/2.2 + j * 40, 38, 38);
+        can.stroke();
+        can.fill();
+      } else if (i >= -3 && i <= -1 && j >= -1.5 && j <= 0.5) {
+        can.beginPath();
+        can.lineWidth = 2;
+        can.strokeStyle = colourNameToHex("black");
+        can.fillStyle = colourNameToHex("blue");
+        can.rect(w/2 + i * 40, h/2.2 + j * 40, 38, 38);
+        can.stroke();
+        can.fill();
+      } else if (i >= 0 && i <= 2 && j >= -1.5 && j <= 0.5) {
+        can.beginPath();
+        can.lineWidth = 2;
+        can.strokeStyle = colourNameToHex("black");
+        can.fillStyle = colourNameToHex("orange");
+        can.rect(w/2 + i * 40, h/2.2 + j * 40, 38, 38);
+        can.stroke();
+        can.fill();
+      } else if (i >= 3 && i <= 5 && j >= -1.5 && j <= 0.5) {
+        can.beginPath();
+        can.lineWidth = 2;
+        can.strokeStyle = colourNameToHex("black");
+        can.fillStyle = colourNameToHex("green");
+        can.rect(w/2 + i * 40, h/2.2 + j * 40, 38, 38);
+        can.stroke();
+        can.fill();
       }
     }
   }

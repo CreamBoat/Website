@@ -5,5 +5,137 @@ html, body {
 }
 
 #canvas1 {
+  position: absolute;
   background-color: darkcyan;
+  z-index: 1;
+}
+
+button {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 50px;
+  border-style: none;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+#white {
+  top: 500px;
+  left: 190px;
+  background-color: snow;
+}
+
+#white-prime {
+  top: 580px;
+  left: 190px;
+  background-color: snow;
+}
+
+#white:hover, #white-prime:hover {
+  box-shadow: -9px 3px 40px 2px black;
+}
+
+#white:active, #white-prime:active {
+  background-color: #c0bdbd;
+}
+
+#yellow {
+  top: 500px;
+  left: 370px;
+  background-color: yellow;
+}
+
+#yellow-prime {
+  top: 580px;
+  left: 370px;
+  background-color: yellow;
+}
+
+#yellow:hover, #yellow-prime:hover {
+  box-shadow: -6px 3px 40px 2px black;
+}
+
+#yellow:active, #yellow-prime:active {
+  background-color: #c0c040;
+}
+
+#red {
+  top: 500px;
+  left: 550px;
+  background-color: red;
+}
+
+#red-prime {
+  top: 580px;
+  left: 550px;
+  background-color: red;
+}
+
+#red:hover, #red-prime:hover {
+  box-shadow: -3px 3px 40px 2px black;
+}
+
+#red:active, #red-prime:active {
+  background-color: #c04040;
+}
+
+#blue {
+  top: 500px;
+  left: 730px;
+  background-color: blue;
+}
+
+#blue-prime {
+  top: 580px;
+  left: 730px;
+  background-color: blue;
+}
+
+#blue:hover, #blue-prime:hover {
+  box-shadow: 3px 3px 40px 2px black;
+}
+
+#blue:active, #blue-prime:active {
+  background-color: #4040c0;
+}
+
+#orange {
+  top: 500px;
+  left: 910px;
+  background-color: orange;
+}
+
+#orange-prime {
+  top: 580px;
+  left: 910px;
+  background-color: orange;
+}
+
+#orange:hover, #orange-prime:hover {
+  box-shadow: 6px 3px 40px 2px black;
+}
+
+#orange:active, #orange-prime:active {
+  background-color: #c09240;
+}
+
+#green {
+  top: 500px;
+  left: 1090px;
+  background-color: green;
+}
+
+#green-prime {
+  top: 580px;
+  left: 1090px;
+  background-color: green;
+}
+
+#green:hover, #green-prime:hover {
+  box-shadow: 9px 3px 40px 2px black;
+}
+
+#green:active, #green-prime:active {
+  background-color: #408040;
 }

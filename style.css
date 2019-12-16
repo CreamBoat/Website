@@ -11,7 +11,8 @@ html, body {
 }
 
 button {
-  position: fixed;
+  outline: none;
+  position: absolute;
   transform: translate(-50%, -50%);
   width: 100px;
   height: 50px;
@@ -20,122 +21,122 @@ button {
   z-index: 2;
 }
 
+button:hover {
+  box-shadow: 0px 0px 40px 2px black;
+}
+
+#scramble {
+  top: 40%;
+  left: 95%;
+  background-color: magenta;
+}
+
+#scramble:active {
+  background-color: darkmagenta;
+}
+
+#solve {
+  top: 60%;
+  left: 95%;
+  background-color: violet;
+}
+
+#solve:active {
+  background-color: darkviolet;
+}
+
 #white {
-  top: 500px;
-  left: 190px;
+  top: 80%;
+  left: 12.5%;
   background-color: snow;
 }
 
 #white-prime {
-  top: 580px;
-  left: 190px;
+  top: 90%;
+  left: 12.5%;
   background-color: snow;
 }
 
-#white:hover, #white-prime:hover {
-  box-shadow: -9px 3px 40px 2px black;
-}
-
 #white:active, #white-prime:active {
-  background-color: #c0bdbd;
+  background-color: grey;
 }
 
 #yellow {
-  top: 500px;
-  left: 370px;
+  top: 80%;
+  left: 27.5%;
   background-color: yellow;
 }
 
 #yellow-prime {
-  top: 580px;
-  left: 370px;
+  top: 90%;
+  left: 27.5%;
   background-color: yellow;
 }
 
-#yellow:hover, #yellow-prime:hover {
-  box-shadow: -6px 3px 40px 2px black;
-}
-
 #yellow:active, #yellow-prime:active {
-  background-color: #c0c040;
+  background-color: #8b8b00;
 }
 
 #red {
-  top: 500px;
-  left: 550px;
+  top: 80%;
+  left: 42.5%;
   background-color: red;
 }
 
 #red-prime {
-  top: 580px;
-  left: 550px;
+  top: 90%;
+  left: 42.5%;
   background-color: red;
 }
 
-#red:hover, #red-prime:hover {
-  box-shadow: -3px 3px 40px 2px black;
-}
-
 #red:active, #red-prime:active {
-  background-color: #c04040;
+  background-color: darkred;
 }
 
 #blue {
-  top: 500px;
-  left: 730px;
+  top: 80%;
+  left: 57.5%;
   background-color: blue;
 }
 
 #blue-prime {
-  top: 580px;
-  left: 730px;
+  top: 90%;
+  left: 57.5%;
   background-color: blue;
 }
 
-#blue:hover, #blue-prime:hover {
-  box-shadow: 3px 3px 40px 2px black;
-}
-
 #blue:active, #blue-prime:active {
-  background-color: #4040c0;
+  background-color: darkblue;
 }
 
 #orange {
-  top: 500px;
-  left: 910px;
+  top: 80%;
+  left: 72.5%;
   background-color: orange;
 }
 
 #orange-prime {
-  top: 580px;
-  left: 910px;
+  top: 90%;
+  left: 72.5%;
   background-color: orange;
 }
 
-#orange:hover, #orange-prime:hover {
-  box-shadow: 6px 3px 40px 2px black;
-}
-
 #orange:active, #orange-prime:active {
-  background-color: #c09240;
+  background-color: #8c5b00;
 }
 
 #green {
-  top: 500px;
-  left: 1090px;
+  top: 80%;
+  left: 87.5%;
   background-color: green;
 }
 
 #green-prime {
-  top: 580px;
-  left: 1090px;
+  top: 90%;
+  left: 87.5%;
   background-color: green;
 }
 
-#green:hover, #green-prime:hover {
-  box-shadow: 9px 3px 40px 2px black;
-}
-
 #green:active, #green-prime:active {
-  background-color: #408040;
+  background-color: darkgreen;
 }
